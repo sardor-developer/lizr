@@ -1,0 +1,32 @@
+.wp-block-lizr-gutenberg {
+	border: 1px solid rgb(0, 0, 0);
+}
+
+.lizr-full-width {
+	width: 100%;
+}
+
+.lizr-media-upload-render {
+	margin-top: 15px;
+}
+
+.lizr-media-upload-render > div {
+	margin-left: 15px;
+}
+
+.lizr-dropdown-content {
+	width: 200px !important;
+}
+
+.lizr-dropdown-content button {
+	margin-bottom: 6px;
+}
+
+.lizr-preview-image {
+	background-image: url(../../../assets/img/preview.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center center;
+	min-height: 400px;
+	width: 100%;
+}

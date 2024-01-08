@@ -1,0 +1,45 @@
+{
+	"name": "lordiconizer",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "npm run lint:js && npm run stylelint && wp-scripts build",
+		"start": "wp-scripts start",
+		"lint:js": "wp-scripts lint-js --fix",
+		"lint:css": "wp-scripts lint-style --fix",
+		"stylelint": "npx stylelint \"**/*.scss\" --fix",
+		"format": "npm run lint:js && npm run stylelint",
+		"prepare": "husky install"
+	},
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@wordpress/eslint-plugin": "^13.5.0",
+		"@wordpress/prettier-config": "^2.4.0",
+		"@wordpress/scripts": "^24.5.0",
+		"@wordpress/stylelint-config": "^21.4.0",
+		"eslint-config-prettier": "^8.5.0",
+		"husky": "^8.0.2",
+		"prettier": "^2.7.1",
+		"stylelint": "^14.14.1"
+	},
+	"dependencies": {
+		"@wordpress/block-editor": "^10.4.0",
+		"@wordpress/blocks": "^11.20.0",
+		"@wordpress/components": "^22.0.0",
+		"@wordpress/element": "^4.19.0",
+		"@wordpress/i18n": "^4.21.0",
+		"@wordpress/icons": "^9.12.0",
+		"@wordpress/url": "^3.22.0",
+		"prop-types": "^15.8.1",
+		"ramda": "^0.28.0"
+	},
+	"prettier": "@wordpress/prettier-config",
+	"stylelint": {
+		"extends": [
+			"@wordpress/stylelint-config/scss"
+		]
+	}
+}

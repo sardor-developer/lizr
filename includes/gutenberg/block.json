@@ -1,0 +1,45 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "lizr/gutenberg",
+  "version": "1.0.0",
+  "title": "Lordiconizer",
+  "category": "media",
+  "description": "LordIcon Animated Icons WP Plugin for Elementor, WPBackery and Gutenberg",
+  "supports": {
+    "html": false,
+    "anchor": true,
+    "color": {
+      "text": false,
+      "background": true
+    },
+    "spacing": {
+      "margin": true,
+      "padding": true,
+      "blockGap": true
+    }
+  },
+  "keywords": ["Lordicon", "Lordiconizer", "Lizr", "Animated Icons", "Icon"],
+  "textdomain": "lizr",
+  "attributes": {
+    "icon_method": { "type": "string", "default": "paste_url" },
+    "cdn_lordicon": { "type": "string", "default": "" },
+    "json_lordicon": { "type": "object", "default": null },
+    "animation_trigger": { "type": "string", "default": "loop" },
+    "style": { "type": "object", "default": { "width": 200, "height": 200 } },
+    "icon_primary_color": { "type": "string", "default": "#121331" },
+    "icon_secondary_color": { "type": "string", "default": "#08a88a" },
+    "icon_stroke": { "type": "number", "default": 30 },
+    "alignment": { "type": "string", "default": "none" },
+    "box_link": { "type": "object" },
+    "preview": { "type": "boolean", "default": false}
+  },
+  "example": {
+    "attributes": {
+      "preview": true
+    }
+  },
+  "editorScript": "file:./build/index.js",
+  "editorStyle": "file:./build/index.css",
+  "style": "file:./build/style-index.css"
+}
